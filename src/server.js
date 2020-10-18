@@ -3,8 +3,11 @@ const path = require('path');
 
 const server = express() //iniciando express
 
+
+server
+.use (express.static('public'))
 //criando rota
-server.get('/', (request, response) => {
+.get('/', (request, response) => {
     return response.sendFile(path.join(__dirname, 'views', 'index.html'))
 })
 
