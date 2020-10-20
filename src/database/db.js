@@ -2,13 +2,14 @@ const Database = require('sqlite-async');
 
 
 function execute(db) {
-   db.exec(`
+   return db.exec(`
         CREATE TABLE IF NOT EXISTS orphanages (
             id INTEGER PRIMARY KEY AUTOINCREMENT,
             lat TEXT,
             lng TEXT,
             name TEXT,
             about TEXT,
+            whatsapp TEXT,
             images TEXT,
             instructions TEXT,
             opening_hours TEXT,
