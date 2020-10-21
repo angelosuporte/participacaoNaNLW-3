@@ -1,5 +1,5 @@
 //create map
-const map = L.map('mapid').setView([-27.222633,-49.6455874], 15); //códico do mapa da lib https://leafletjs.com/
+const map = L.map('mapid').setView([-27.221441,-49.649868], 15); //códico do mapa da lib https://leafletjs.com/
 
 //create and add tileLayer
 L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png').addTo(map)

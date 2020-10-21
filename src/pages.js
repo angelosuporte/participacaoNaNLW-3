@@ -24,7 +24,7 @@ module.exports = {
                 orphanage.open_on_weekends = true
             }
 
-            return res.render('orphanage', {orphanage: orphanage[0]})
+            return res.render('orphanage', {orphanage})
         } catch (erro) {
             console.log(error);
             return res.send('Erro no banco de dados!')
@@ -38,7 +38,7 @@ module.exports = {
             return res.render('orphanages', {orphanages})
         }catch (error){
             console.log(error)
-            return res.send('Erro no banco de dados')
+            return res.send('Erro no banco de dados!')
         }
     },
 
@@ -70,11 +70,11 @@ module.exports = {
             open_on_weekends: fields.open_on_weekends,
         })
             //redirecionamento
-            return res.redirect('/orphanages')
+            return res.redirect("/orphanages")
             
         } catch (error) {
             console.log(error)
-            return res.send('Erro no banco de dados!')
+            return res.send('Erro no banco de dados--------->>')
         }
     }
 }
