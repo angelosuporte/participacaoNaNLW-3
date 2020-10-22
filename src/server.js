@@ -20,5 +20,5 @@ server
   .get('/create-orphanage', pages.createOrphanage)
   .post('/save-orphanage', pages.saveOrphanage)
 
-//ligar servidornp
+//ligar servidor
 server.listen(5500);
