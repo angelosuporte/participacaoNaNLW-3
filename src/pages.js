@@ -50,7 +50,8 @@ module.exports = {
         const fields = req.body
 
         //validar se todos os campos estão preenchidos
-        if(Object.values(fields).includes("")){
+        if(Object.values(fields).includes(''))
+        {
             return res.send("Todos os campos devem ser preenchidos!")
         }
 
@@ -70,7 +71,7 @@ module.exports = {
             open_on_weekends: fields.open_on_weekends,
         })
             //redirecionamento
-            return res.redirect("/orphanages")
+            return res.redirect('/orphanages')
             
         } catch (error) {
             console.log(error)
